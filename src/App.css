@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    box-shadow: 5px 5px 5px rgb(230, 225, 225)
+  }
+}
+
+.App-header {
+  background-color: #5386eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.item {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+.show {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media (max-width:400px){
+  .mobile {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width:767px){
+  .nav {
+    position:absolute;
+    width:90%;
+    transform:translateY(-250px);
+    left:0;
+    right:0;
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+    border-radius:5px;
+    z-index:1;
+  }
+
+  .search {
+    width: 20%;
+  }
+
+  .nav a {
+    color: black !important;
+  }
+
+  .none {
+    display: block;
+  }
+
+  .animation1 {
+    transform:translateY(50px);
+    transition: transform 1.5s;
+  }
+
+  .animation2 {
+    transform:translateY(-250px);
+    transition: transform 1.5s;
+  }
+}
+
+.ham{
+  width:15px;
+  height:15px;
+  margin-right: 10px;
+  margin-top:5px;
+}
+
+.player {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg {
+  width:20px;
+  height:20px;
+  filter: invert(100%) sepia(0%) saturate(7477%) hue-rotate(116deg) brightness(111%) contrast(100%);
+  outline: white;
+  padding-top: 10px;
+  padding-right:40px;
+  padding-left: 40px;
+}
+
+.innerPlayer{
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top:40px;
+}
+
+.play {
+  color: white;
+}
+
+.fa-play-circle{
+  font-size: 38px;
+}
+
+.step {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.details {
+  color: white;
+  display: flex;
+}
+
+.function {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width:100px;
+  margin-top:40px;
+  margin-right:50px;
+}
+
+.detailimage{
+  width:60px;
+  height: 60px;
+  padding: 20px;
+}
+
+.innerdetail{
+  padding-top:30px;
+  padding-bottom:30px;
+}
